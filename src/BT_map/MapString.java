@@ -12,9 +12,6 @@ public class MapString {
         String[] strings = string.split("\\s");
 
         HashMap<String, Integer> customers = new HashMap<>();
-//        HashMap<String, ?> hashMap = new HashMap<>();
-//
-//        hashMap = customers;
 
         addKey(strings, customers);
         display(customers);
