@@ -19,15 +19,18 @@ public class Demo {
             }
         }
 
-//        System.out.println("Hiển thị queue NU: ");
-//        for (Person person : queueFemale){
-//            System.out.println(person);
-//        }
-//
-//        System.out.println("Hiển thị queue NAM: ");
-//        for (Person person : queueMale){
-//            System.out.println(person);
-//        }
+        System.out.println("Hiển thị queue NU: ");
+        for (Person person : queueFemale){
+            System.out.println(person);
+        }
+
+        System.out.println("Hiển thị queue NAM: ");
+        for (Person person : queueMale){
+            System.out.println(person);
+        }
+
+        System.out.println("List đã sắp xếp: ");
+        sortListByRenderAndBirthday(arrayList);
 
         try {
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("female.txt"));
@@ -46,9 +49,6 @@ public class Demo {
         } catch (IOException | ClassNotFoundException ioe) {
             System.out.println(ioe.getMessage());
         }
-
-//        System.out.println("List đã sắp xếp: ");
-//        sortListByRenderAndBirthday(arrayList);
     }
 
     private static void readFile() throws IOException, ClassNotFoundException, EOFException {
